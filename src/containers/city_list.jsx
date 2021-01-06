@@ -5,7 +5,7 @@ const CityList = (props) => {
   const cityArr = props.cities;
   const cities = cityArr.map((city) => {
     return (
-      <City key={city.name} city={city} />
+      <City key={city.name} city={city} selectCity={props.selectCity} />
     );
   });
   return (
